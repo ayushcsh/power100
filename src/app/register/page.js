@@ -100,7 +100,7 @@ export default function RegisterPage() {
         description: "Player Registration Fee",
         image: "https://example.com/your_logo",
         order_id: order.id,
-        callback_url: `http://localhost:3000/api/razorpay`,
+        callback_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/razorpay`,
         prefill: {
           name: formData.fullName,
           email: formData.email,
