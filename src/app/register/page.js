@@ -100,7 +100,7 @@ export default function RegisterPage() {
         description: "Player Registration Fee",
         image: "https://example.com/your_logo",
         order_id: order.id,
-        callback_url: `https://power100-beryl.vercel.app/api/razorpay`, // Ensure this matches your server endpoint
+        callback_url: `https://power100-gamma.vercel.app/api/razorpay`, // Ensure this matches your server endpoint
         prefill: {
           name: formData.fullName,
           email: formData.email,
