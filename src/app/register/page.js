@@ -87,7 +87,7 @@ export default function RegisterPage() {
     console.log("Form submitted. Initiating payment with data:", formData)
 
     try {
-      const order = await createOrder(500, "INR", formData) // The amount should be in the smallest currency unit (e.g., paisa for INR)
+      const order = await createOrder(5000, "INR", formData) // The amount should be in the smallest currency unit (e.g., paisa for INR)
       if (!order || !order.id) {
         throw new Error("Failed to create order.")
       }
@@ -100,7 +100,7 @@ export default function RegisterPage() {
         description: "Player Registration Fee",
         image: "https://example.com/your_logo",
         order_id: order.id,
-        callback_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/razorpay`,
+        callback_url: `/api/razorpay`,
         prefill: {
           name: formData.fullName,
           email: formData.email,
