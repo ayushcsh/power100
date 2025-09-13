@@ -39,6 +39,6 @@ export async function POST(req) {
   );
 
   return NextResponse.redirect(
-    `${process.env.NEXT_PUBLIC_BASE_URL}?success=true`
+    `https://power100-beryl.vercel.app?success=true`
   );
 }
