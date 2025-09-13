@@ -42,3 +42,4 @@ export async function POST(req) {
     `https://power100-beryl.vercel.app/register?payment=true`
   );
 }
+
