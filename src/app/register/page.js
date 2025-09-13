@@ -14,7 +14,6 @@ import { createOrder } from "../../../actions/useraction"
 
 
 export default function RegisterPage() {
-  const router = useRouter();
   const { payment } = router.query;
 
 
