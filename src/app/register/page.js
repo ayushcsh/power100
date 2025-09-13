@@ -14,7 +14,7 @@ import { createOrder } from "../../../actions/useraction"
 
 
 export default function RegisterPage() {
-  const { payment } = router.query;
+  // const { payment } = router.query; // Removed - router was not imported and causing prerender error
 
 
   const [isSubmitting, setIsSubmitting] = useState(false) // Added for loading state
