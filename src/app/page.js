@@ -89,7 +89,7 @@ const Index = () => {
 
                   {/* Notify Button */}
                   <Button className="w-full md:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold">
-                    Registration Opens Soon
+                    Registration Opens 
                   </Button>
                 </div>
               </CardContent>
