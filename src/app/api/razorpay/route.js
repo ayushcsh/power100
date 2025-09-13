@@ -39,6 +39,6 @@ export async function POST(req) {
   );
 
   return NextResponse.redirect(
-    `https://power100-beryl.vercel.app?success=true`
+    `https://power100-beryl.vercel.app/register?payment=true`
   );
 }
