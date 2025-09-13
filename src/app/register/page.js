@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Script from "next/script"
 import { createOrder } from "../../../actions/useraction"
-import { useRouter } from "next/navigation"
+
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -127,11 +127,7 @@ export default function RegisterPage() {
 
   return (
     <>
-      {payment === "true" && (
-        <div className="alert alert-success">
-          Payment was successful! Thank you for registering.
-        </div>
-      )}
+      
       <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
       <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-white py-8 px-4">
         <div className="max-w-4xl mx-auto">
