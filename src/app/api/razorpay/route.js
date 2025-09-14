@@ -39,7 +39,7 @@ export async function POST(req) {
   );
 
   return NextResponse.redirect(
-  `https://power100-beryl.vercel.app` 
+    new URL(`/`, req.url) , { status: 303 }
 );
 }
 
